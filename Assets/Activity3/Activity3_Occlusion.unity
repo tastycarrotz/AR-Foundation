@@ -616,7 +616,7 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1015722065}
   m_Enabled: 1
-  serializedVersion: 12
+  serializedVersion: 13
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
@@ -668,7 +668,7 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
-  m_ShadowRadius: 0
+  m_ShapeRadius: 0
   m_ShadowAngle: 0
   m_LightUnit: 1
   m_LuxAtDistance: 1
@@ -1236,7 +1236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PoseEvent: {fileID: 11400000, guid: b4c22be57749c834fb731b76b2e2e0d2, type: 2}
-  m_ProjectilePrefab: {fileID: 7096730164034018795, guid: 4c4b49fac887343a5a1f5fd8e4e3d872,
+  m_ProjectilePrefab: {fileID: 7096730164034018795, guid: e3dec2180f9c26b46b47f1644f85ce2b,
     type: 3}
   m_LaunchSpeed: 1
 --- !u!114 &1512850616
