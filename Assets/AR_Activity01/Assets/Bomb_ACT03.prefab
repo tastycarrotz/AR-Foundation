@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7096730164034018793}
   - component: {fileID: 7096730164034018792}
   m_Layer: 0
-  m_Name: Bomb
+  m_Name: Bomb_ACT03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,13 +28,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7096730164034018795}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.47840345, y: 0.5148652, z: 0.521127, w: -0.48422176}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 12, y: 12, z: 12}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.308, y: 0, z: 265.79498}
 --- !u!33 &7096730164034018799
 MeshFilter:
   m_ObjectHideFlags: 0
