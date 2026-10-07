@@ -692,6 +692,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 524753477}
   m_CullTransparentMesh: 0
+--- !u!114 &578201572 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3447509975066847121, guid: 8f2c1ffdafd49a943ac79dc0ff480220,
+    type: 3}
+  m_PrefabInstance: {fileID: 1512850612}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &681271213 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7430515637045249478, guid: b8f7382051281456a93ced9c504c48c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1253493306}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &870389412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1481,6 +1505,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 7043833920548368154, guid: 8f2c1ffdafd49a943ac79dc0ff480220,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3212274571300802664, guid: 8f2c1ffdafd49a943ac79dc0ff480220, type: 3}
     - {fileID: 6597082072081979387, guid: 8f2c1ffdafd49a943ac79dc0ff480220, type: 3}
@@ -1584,6 +1613,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1684959074}
+  - component: {fileID: 1684959075}
   m_Layer: 0
   m_Name: Camera Offset
   m_TagString: Untagged
@@ -1607,6 +1637,28 @@ Transform:
   - {fileID: 17397540}
   m_Father: {fileID: 2126129808}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1684959075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684959073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 956dd6cf70eaca449a45b6a95b96c8c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit.Samples.StarterAssets::UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ObjectSpawner
+  m_CameraToFace: {fileID: 0}
+  m_ObjectPrefabs:
+  - {fileID: 0}
+  m_SpawnVisualizationPrefab: {fileID: 0}
+  m_SpawnOptionIndex: -1
+  m_OnlySpawnInView: 1
+  m_ViewportPeriphery: 0.15
+  m_ApplyRandomAngleAtSpawn: 1
+  m_SpawnAngleRange: 45
+  m_SpawnAsChildren: 0
 --- !u!1 &2126129802
 GameObject:
   m_ObjectHideFlags: 0
@@ -1621,6 +1673,9 @@ GameObject:
   - component: {fileID: 2126129805}
   - component: {fileID: 2126129804}
   - component: {fileID: 2126129803}
+  - component: {fileID: 2126129809}
+  - component: {fileID: 2126129810}
+  - component: {fileID: 2126129811}
   m_Layer: 0
   m_Name: XR Origin (Mobile AR)
   m_TagString: Untagged
@@ -1646,7 +1701,7 @@ MonoBehaviour:
   m_SerializedLibrary: {fileID: 11400000, guid: 25d4ae828143ae54f9ebd7b069e96ac8,
     type: 2}
   m_MaxNumberOfMovingImages: 3
-  m_TrackedImagePrefab: {fileID: 7096730164034018795, guid: e3dec2180f9c26b46b47f1644f85ce2b,
+  m_TrackedImagePrefab: {fileID: 4579342423508525167, guid: a3557ef7f9ff72246a774e0410a89424,
     type: 3}
 --- !u!114 &2126129804
 MonoBehaviour:
@@ -1679,7 +1734,8 @@ MonoBehaviour:
   <trackablesChanged>k__BackingField:
     m_PersistentCalls:
       m_Calls: []
-  m_PlanePrefab: {fileID: 0}
+  m_PlanePrefab: {fileID: 7843271030829062946, guid: 8ce01314df6c2d84baffedc8ad2926d4,
+    type: 3}
   m_DetectionMode: -1
 --- !u!114 &2126129806
 MonoBehaviour:
@@ -1728,6 +1784,126 @@ Transform:
   - {fileID: 1684959074}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2126129809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126129802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728ad7fae8e460a4ba41265c7308d757, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.ARFoundation::UnityEngine.XR.ARFoundation.ARAnchorManager
+  <trackablesChanged>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AnchorPrefab: {fileID: 1362899771367802, guid: 48e43bbe3af404986bbdc5a552e5fefd,
+    type: 3}
+--- !u!114 &2126129810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126129802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6d8843f352794429471e0be8129eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_XROrigin: {fileID: 2126129807}
+  m_RaycastManager: {fileID: 2126129804}
+  m_InputActionReferences: {fileID: 11400000, guid: 0601a0c2bd60343458dc7aca9d61251a,
+    type: 2}
+  m_ARRaycastHitEvent: {fileID: 11400000, guid: 6ddaf6abbb6e3f6489a5badc62d646ef,
+    type: 2}
+  m_TrackableType: 17
+  m_EventSystem: {fileID: 578201572}
+  m_GraphicRaycaster: {fileID: 681271213}
+--- !u!114 &2126129811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126129802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e011a698b7cf15d468bb7fcddcbca503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AnchorManager: {fileID: 2126129809}
+  m_RaycastHitEvent: {fileID: 11400000, guid: 6ddaf6abbb6e3f6489a5badc62d646ef, type: 2}
+--- !u!1001 &5355233160724498037
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3700764122039745196, guid: 8ce01314df6c2d84baffedc8ad2926d4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700764122039745196, guid: 8ce01314df6c2d84baffedc8ad2926d4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700764122039745196, guid: 8ce01314df6c2d84baffedc8ad2926d4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700764122039745196, guid: 8ce01314df6c2d84baffedc8ad2926d4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700764122039745196, guid: 8ce01314df6c2d84baffedc8ad2926d4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700764122039745196, guid: 8ce01314df6c2d84baffedc8ad2926d4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700764122039745196, guid: 8ce01314df6c2d84baffedc8ad2926d4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700764122039745196, guid: 8ce01314df6c2d84baffedc8ad2926d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700764122039745196, guid: 8ce01314df6c2d84baffedc8ad2926d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700764122039745196, guid: 8ce01314df6c2d84baffedc8ad2926d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843271030829062946, guid: 8ce01314df6c2d84baffedc8ad2926d4,
+        type: 3}
+      propertyPath: m_Name
+      value: AR Default Plane
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8ce01314df6c2d84baffedc8ad2926d4, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1738,3 +1914,4 @@ SceneRoots:
   - {fileID: 1512850612}
   - {fileID: 375754706}
   - {fileID: 2126129808}
+  - {fileID: 5355233160724498037}
